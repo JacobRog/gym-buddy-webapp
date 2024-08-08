@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+.hidden {
+    display: none;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.login-container, .workout-container, .shared-workouts {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.login-container input, .workout-container textarea, .workout-container input {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-container button, .workout-container button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.login-container button:hover, .workout-container button:hover {
+    background-color: #0056b3;
+}
+
+.shared-workouts .workout {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: left;
+    background-color: #fff;
+}
+
+.shared-workouts .workout button {
+    background-color: #28a745;
+    color: white;
+    margin-top: 10px;
+}
+
+#logoutBtn, #clearLocalStorageBtn {
+    background-color: #dc3545;
+}
+
+#logoutBtn:hover, #clearLocalStorageBtn:hover {
+    background-color: #c82333;
+}
