@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Buddy - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Workout</h1>
+    </div>
+
+    <div class="login-container">
+        <h1>Login to Gym Buddy</h1>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="loginBtn">Login</button>
+    </div>
+
+    <div class="workout-container hidden">
+        <h1>Share your Workout</h1>
+        <textarea id="workoutDetails" placeholder="Enter your workout details"></textarea>
+        <input type="date" id="workoutDate">
+        <input type="time" id="workoutTime">
+        <button id="shareWorkoutBtn">Share workout with the community</button>
+        <button id="logoutBtn">Logout</button>
+        <button id="clearLocalStorageBtn">Clear All My Data</button>
+    </div>
+
+    <div id="sharedWorkouts" class="shared-workouts hidden">
+        <h1>Community Workouts</h1>
+        <!-- Shared workouts will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
